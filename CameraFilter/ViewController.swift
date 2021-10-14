@@ -13,6 +13,7 @@ class ViewController: UIViewController {
     // MARK:  Private Data Members
     private let disposeBag = DisposeBag()
     
+    
     // MARK:  IBOutlets
     @IBOutlet weak var applyFilterButton: UIButton!
     @IBOutlet weak var photoImageView: UIImageView!
@@ -24,11 +25,13 @@ class ViewController: UIViewController {
         guard let sourceImage = self.photoImageView.image else { return }
         
         //Use the filter service to apply the filter
-        FilterService().applyFilter(to: sourceImage) { theFilteredImage in
+        FilterService().applyFilter(to: sourceImage).subscribe(onNext: {
+            theFilteredImage in
+            
             DispatchQueue.main.async {
                 self.photoImageView.image = theFilteredImage
             }
-        }
+        }).disposed(by: disposeBag)
     }
     
     

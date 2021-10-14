@@ -71,14 +71,14 @@
 			children = (
 				01797FF7270CC45B005B6B5F /* AppDelegate.swift */,
 				01797FF9270CC45B005B6B5F /* SceneDelegate.swift */,
+				01AA608E2715CF9100DBE093 /* FilterService.swift */,
+				01087DF5270F86EE00D05DCC /* PhotoCollectionViewCell.swift */,
+				0179800B270CC8C0005B6B5F /* PhotosCollectionViewController.swift */,
 				01797FFB270CC45B005B6B5F /* ViewController.swift */,
 				01797FFD270CC45B005B6B5F /* Main.storyboard */,
 				01798000270CC463005B6B5F /* Assets.xcassets */,
 				01798002270CC463005B6B5F /* LaunchScreen.storyboard */,
 				01798005270CC463005B6B5F /* Info.plist */,
-				0179800B270CC8C0005B6B5F /* PhotosCollectionViewController.swift */,
-				01087DF5270F86EE00D05DCC /* PhotoCollectionViewCell.swift */,
-				01AA608E2715CF9100DBE093 /* FilterService.swift */,
 			);
 			path = CameraFilter;
 			sourceTree = "<group>";
